@@ -145,10 +145,6 @@
         "mobile": {}
       }
     },
-    "hoverEffect": {
-      "type": "string",
-      "default": "none"
-    },
     "authorLayout": {
       "type": "string",
       "default": "inline",

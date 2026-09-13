@@ -94,10 +94,6 @@
       "type": "boolean",
       "default": false
     },
-    "hoverEffect": {
-      "type": "string",
-      "default": "none"
-    },
     "imageRadius": {
       "type": "object",
       "default": {

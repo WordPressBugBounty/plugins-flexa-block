@@ -103,10 +103,6 @@
         "alt": ""
       }
     },
-    "hoverEffect": {
-      "type": "string",
-      "default": "none"
-    },
     "iconSize": {
       "type": "object",
       "default": {
