@@ -23,6 +23,14 @@
       "type": "string",
       "default": "section"
     },
+    "contentSource": {
+      "type": "string",
+      "default": "fields",
+      "enum": [
+        "fields",
+        "custom"
+      ]
+    },
     "containerType": {
       "type": "string",
       "default": "full-width",

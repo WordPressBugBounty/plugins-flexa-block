@@ -21,7 +21,17 @@
   "usesContext": [
     "flexa/filterTarget"
   ],
+  "example": {
+    "attributes": {
+      "isExamplePreview": true
+    },
+    "viewportWidth": 320
+  },
   "attributes": {
+    "isExamplePreview": {
+      "type": "boolean",
+      "default": false
+    },
     "blockId": {
       "type": "string"
     },

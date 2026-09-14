@@ -81,6 +81,16 @@
         "top"
       ]
     },
+    "iconAlign": {
+      "type": "string",
+      "default": "",
+      "enum": [
+        "",
+        "flex-start",
+        "center",
+        "flex-end"
+      ]
+    },
     "iconSize": {
       "type": "object",
       "default": {

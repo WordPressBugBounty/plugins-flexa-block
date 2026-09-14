@@ -72,6 +72,10 @@
       "type": "number",
       "default": 0
     },
+    "scrollSpy": {
+      "type": "boolean",
+      "default": false
+    },
     "collapsible": {
       "type": "boolean",
       "default": false
@@ -115,6 +119,13 @@
       }
     },
     "linkHoverColor": {
+      "type": "object",
+      "default": {
+        "light": "",
+        "dark": ""
+      }
+    },
+    "activeColor": {
       "type": "object",
       "default": {
         "light": "",

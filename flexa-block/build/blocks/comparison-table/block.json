@@ -129,6 +129,14 @@
         "mobile": {}
       }
     },
+    "tableMinWidth": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
     "stickyHeader": {
       "type": "boolean",
       "default": false
