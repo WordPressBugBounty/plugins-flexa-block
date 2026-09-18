@@ -5,14 +5,16 @@
   "version": "1.0.0",
   "title": "Social Share",
   "category": "flexa",
-  "description": "Row of share buttons that post the current page to Facebook, X, LinkedIn or Pinterest — with per-device size, gap, alignment, a button shape, official brand or custom-tinted icons and a hover motion.",
+  "description": "Row of share buttons that post the current page — or the current WooCommerce product — to Facebook, X, LinkedIn or Pinterest, with per-device size, gap, alignment, a button shape, official brand or custom-tinted icons, optional network names and a hover motion.",
   "keywords": [
     "flexa",
     "share",
     "social",
     "sharing",
     "facebook",
-    "twitter"
+    "twitter",
+    "product",
+    "woocommerce"
   ],
   "textdomain": "flexa-block",
   "example": {
@@ -55,7 +57,8 @@
       "default": "current",
       "enum": [
         "current",
-        "custom"
+        "custom",
+        "product"
       ]
     },
     "shareUrl": {
@@ -69,6 +72,10 @@
     "shareImage": {
       "type": "string",
       "default": ""
+    },
+    "includeImage": {
+      "type": "boolean",
+      "default": true
     },
     "newTab": {
       "type": "boolean",
@@ -149,6 +156,18 @@
         "dark": ""
       }
     },
+    "showLabels": {
+      "type": "boolean",
+      "default": false
+    },
+    "labelTypography": {
+      "type": "object",
+      "default": {
+        "desktop": {},
+        "tablet": {},
+        "mobile": {}
+      }
+    },
     "spacing": {
       "type": "object",
       "default": {
@@ -168,7 +187,16 @@
         "gradient": {
           "light": "",
           "dark": ""
-        }
+        },
+        "image": {
+          "url": "",
+          "id": null,
+          "position": "center center",
+          "repeat": "no-repeat",
+          "size": "cover",
+          "attachment": "scroll"
+        },
+        "lazyLoad": false
       }
     },
     "border": {
@@ -212,6 +240,18 @@
         },
         "inset": false,
         "enabled": false
+      }
+    },
+    "advancedLayout": {
+      "type": "object",
+      "default": {
+        "desktop": {
+          "zIndex": "",
+          "overflow": "",
+          "position": ""
+        },
+        "tablet": {},
+        "mobile": {}
       }
     },
     "responsiveVisibility": {
