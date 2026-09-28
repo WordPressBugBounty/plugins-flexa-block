@@ -5,7 +5,7 @@ Tags: blocks, block editor, fse, container, layout
 Requires at least: 6.4
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.14
+Stable tag: 1.0.15
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -141,7 +141,30 @@ In the WordPress admin sidebar, click **Flexa Block** (located below Settings). 
 = Is there a Pro version? =
 Yes. Flexa Block Pro adds additional blocks and advanced features. It works alongside this free plugin.
 
+== Screenshots ==
+
+1. Full pages built entirely with Flexa Block: a florist landing page, a shoe store home page, and the built-in starter-template browser.
+2. A WooCommerce single-product page assembled from Flexa's product blocks: name, price, rating, image gallery, variation options, add to cart and the details tabs.
+3. A contact page: a hero Banner block above the AJAX Subscribe Form, with contact details in Info Box cards.
+4. A shoe store built with Flexa Block: the single-product page, a shop grid driven by the Post Filter, and a size guide using the Data Table block.
+5. General settings: dark mode output options and the performance controls for the generated CSS.
+6. The Blocks tab: enable or disable any of the bundled blocks, grouped by category and searchable.
+7. Sample Data: import a ready-made example as a draft page, then open it in the editor or preview it on the front end.
+8. Editing settings: turn front-end inline editing on or off, choose which roles may edit, and pick which blocks are editable.
+
+== Credits ==
+
+The photographs and illustrations shown in the plugin screenshots are for demonstration only and are not bundled with the plugin. They come from the following free sources, all of which permit commercial use:
+
+* Photos from Pixabay, used under the Pixabay Content License: https://pixabay.com/service/license-summary/
+* Photos from Unsplash, used under the Unsplash License: https://unsplash.com/license
+* Photos from Pexels, used under the Pexels License: https://www.pexels.com/license/
+* Some images were generated with ChatGPT (OpenAI); under OpenAI's Terms of Use, ownership of the generated images is assigned to the user.
+
 == Changelog ==
+
+= 1.0.15 =
+* Accessibility and SEO: every "Read more" button in Post Grid and RSS now carries the post or feed item title in its accessible name, so screen readers, voice control and site audits see which card each button belongs to. Previously a page of cards handed them a list of identical "Read more" links. The visible button text is unchanged.
 
 = 1.0.14 =
 * Sample Data: the bundled starter pages (Contact and SaaS Landing) now ship with a finished visual design instead of a plain layout. Each sample card has a single Preview action that opens the page on the front end, and removing an imported sample now asks you to confirm first.
@@ -228,6 +251,9 @@ Yes. Flexa Block Pro adds additional blocks and advanced features. It works alon
 * Initial release with the Container block.
 
 == Upgrade Notice ==
+
+= 1.0.15 =
+Gives each "Read more" button an accessible name that includes the post title. No visual or content changes.
 
 = 1.0.13 =
 Fixes the deactivation survey stacking multiple "Before you go" dialogs when several Flexa plugins are active.
